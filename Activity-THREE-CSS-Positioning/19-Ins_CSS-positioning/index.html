@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!-- Head section remains the same -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <style>
+      /* CSS remains exactly the same */
+      h1, h2, h3 {
+        text-align: center;
+      }
+
+      header {
+        width: 100%;
+        border: 10px solid darkblue;
+        background-color: lightblue;
+      }
+
+      section {
+        height: 400px;
+        width: 80%;
+        margin: 30px auto;
+        border: 10px solid black;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      #relative-box {
+        position: relative;
+        left: 200px;
+      }
+
+      #absolute-section {
+        position: relative;
+      }
+
+      #absolute-box {
+        position: absolute;
+        top: 50px;
+        right: 100px;
+      }
+
+      #fixed-box {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>CSS Positioning</h1>
+    </header>
+
+    <section>
+      <h2>Static Position</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Square_200x200.svg/200px-Square_200x200.svg.png" alt="box with number 1"/>
+      <h3>This is the default position type - you don't need to set any position value.</h3>
+      <h3>Elements appear in order, one after another, as they are written in the HTML.</h3>
+    </section>
+
+    <section>
+      <h2>Relative Position</h2>
+      <img id="relative-box" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Square_200x200.svg/200px-Square_200x200.svg.png" alt="box with number 2"/>
+      <h3>RELATIVE means moving something from where it started.<br> Using position: relative lets us move an element from its normal position, while keeping its original space. <br> In this example, we used 'left: 200px' to move the box 200 pixels to the right.</h3>
+    </section>
+    
+    <section id="absolute-section">
+      <h2>Absolute Position</h2>
+      <img id="absolute-box" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Square_200x200.svg/200px-Square_200x200.svg.png" alt="box with number 3"/>
+      <h3>ABSOLUTE means placing something based on its closest positioned container.</h3>
+      <h3>Position: absolute lets us place an element exactly where we want it inside its container.</h3>
+      <h3>In our code, we used 'top: 50px' to move it down from the top and 'right: 100px' to move it in from the right edge.</h3>
+      <h3>For this to work, we need to add 'position: relative' to the section that contains our image so that it is 'relative' to the container.</h3>
+    </section>
+
+    <section>
+      <h2>Fixed Position</h2>
+      <img id="fixed-box" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Square_200x200.svg/200px-Square_200x200.svg.png" alt="box with number 4"/>
+      <h3>Position: fixed keeps an element in the same spot on your screen.</h3>
+      <h3>We used 'bottom: 0' and 'right: 0' to stick this box to the bottom-right corner.</h3>
+      <h3>Try scrolling - the box will stay in place!</h3>
+    </section>
+  </body>
+</html>
