@@ -49,3 +49,17 @@ h3 {
   /* Sets all sides to 20px */
   margin: 20px;
 }
+
+/* CSS Padding/Margin Shorthand Guide
+   
+   Order depends on how many values you include:
+
+   padding: 20px                    All sides get 20px 
+   padding: 20px 40px              Top/Bottom 20px, Left/Right 40px
+   padding: 20px 40px 60px         Top 20px, Left/Right 40px, Bottom 60px
+   padding: 20px 40px 60px 80px    Top 20px, Right 40px, Bottom 60px, Left 80px
+
+   Remember: With 4 values, think clockwise ↑ → ↓ ←
+   
+   This pattern works the same for both padding and margin!
+*/
