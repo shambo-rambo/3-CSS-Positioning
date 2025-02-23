@@ -20,7 +20,7 @@ section {
 /* Relative positioning */
 #relative-box {
   position: relative;
-  left: 200px;
+  right: 50px;
 }
 
 /* Absolute positioning */
